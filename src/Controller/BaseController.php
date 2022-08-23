@@ -11,6 +11,14 @@ class BaseController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(): Response
     {
-        return $this->render('base.html.twig');
+        return $this->render('userLogin.html.twig');
     }
+
+
+    #[Route('/password-lost',name:'password_lost')]
+    public function setNewPassword():Response{
+        return $this->render('passwordLostPage.html.twig');
+    }
+
+
 }

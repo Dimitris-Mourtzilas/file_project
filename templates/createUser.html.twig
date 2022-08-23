@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <form>
+        <div class="form-group">
+            <label for="firstName">First name</label>
+            <div class="form-control">
+                <input type="text" id="firstName">
+            </div>
+
+            <label for="lastName">Last name</label>
+            <div class="form-control">
+                <input type="text" id="lastName">
+            </div>
+
+            <label for="nickName">Nick name</label>
+            <div class="form-control">
+                <input type="text" id="nickName">
+            </div>
+
+            <label for="email">Email address</label>
+            <div class="form-control">
+                <input type="email" id="email">
+            </div>
+
+            <label for="password">Password</label>
+            <div class="form-control">
+                <input type="password" id="password">
+            </div>
+
+            <label for="phone">Phone number</label>
+            <div class="form-control">
+                <input type="tel" id="phone">
+            </div>
+
+            <div class="form-submit">
+                <button type="submit">Submit</button>
+            </div>
+
+        </div>
+
+
+    </form>
+
+{% endblock %}

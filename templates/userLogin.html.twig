@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <form>
+        <div class="form-group">
+
+            <label for="nickName">Nick name</label>
+            <div class="form-control">
+                <input type="text" id="nickName">
+            </div>
+
+            <label for="password">Password</label>
+            <div class="form-control">
+                <input type="password" id="password">
+            </div>
+            <div class="form-submit">
+                <button type="submit">Sign in</button>
+            </div>
+
+            <div class="form-submit">
+                <button><a href="{{ url('password_lost') }}">Forgot password?</a></button>
+            </div>
+
+
+        </div>
+
+    </form>
+{% endblock %}
